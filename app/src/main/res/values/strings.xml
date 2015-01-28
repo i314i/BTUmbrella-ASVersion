@@ -7,23 +7,13 @@
     <string name="not_yet_connected">尚未連接</string>
 
     <!-- BluetoothChat -->
-    <string name="not_connected">沒有連接到任何裝置</string>
+    <string name="not_connected">沒有連接到互動雨傘裝置</string>
     <string name="bt_not_available">裝置無法使用藍芽</string>
     <string name="bt_not_enabled_leaving">離開BTumbrella</string>
     <string name="title_connecting">連接中...</string>
     <string name="title_connected_to">連接到：</string>
     <string name="title_not_connected">無連接裝置</string>
     <string name="connect_to">連接到</string>
-
-
-    <!-- DeviceListActivity -->
-    <string name="scanning">掃描裝置...</string>
-    <string name="select_device">選擇連接裝置</string>
-    <string name="none_paired">沒有配對記錄</string>
-    <string name="none_found">沒有找到裝置</string>
-    <string name="title_paired_devices">配對裝置</string>
-    <string name="title_other_devices">其它裝置</string>
-    <string name="button_scan">掃描裝置</string>
 
     <!-- Options Menu -->
     <string name="connect">連接裝置</string>
@@ -35,8 +25,25 @@
     <string name="btquit">藍芽裝置已關閉</string>
     <string name="btopen">藍芽裝置已開啟</string>
     <string name="aboutus">關於我們</string>
-
+    <string name="help">說明</string>
+    <string name="rating">評分</string>
     <string name="staff">我們團隊</string>
     <string name="close">關閉</string>
+
+    <!-- staff -->
+    <string name="manager">召集人：柴俊瑜</string>
+    <string name="music_team">音樂處理輸出：Alston Li</string>
+    <string name="bt_team">藍芽訊號接收處理：楊宗諺</string>
+    <string name="coaster_team">杯墊訊號處理：陳虹佑 吳佳真</string>
+    <string name="led_team">雨傘LED控制：楊兆尹 朱佑倫</string>
+    <string name="app_team">互動APP：邱弘毅</string>
+
+    <!-- help-->
+    <string name="instruction">
+        按下右上角藍芽圖示即可連接互動雨傘裝置。
+        如果連接時，因任何原因使藍芽斷開，請關閉藍芽，再試一次。
+        如果重複數次仍無法連上互動雨傘裝置，請關閉BTUmbrella，
+        並將BTUmbrella從記憶體清空。完成後，再開啟BTUmbrella。
+        祝您玩的愉快！</string>
 
 </resources>

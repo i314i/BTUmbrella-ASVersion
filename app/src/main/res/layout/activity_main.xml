@@ -14,43 +14,117 @@
      limitations under the License.
 -->
 
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    >
+    android:background="#000000"
+    android:id="@+id/container"
+    tools:context="com.notown.btumbrella.MainActivity"
+    tools:ignore="MergeRootFrame">
 
-    <TextView
-        android:id="@+id/apptitle"
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
         android:gravity="center"
-        android:text="@string/app_name"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:textSize="35sp"
-        android:textStyle="bold" />
+        android:layout_marginTop="25dp">
+
+        <ImageView
+            android:id="@+id/app_title"
+            android:layout_width="350dp"
+            android:layout_height="70dp"
+            android:gravity="center"
+            android:background="@drawable/app_title"
+            />
+    </LinearLayout>
 
     <TextView
         android:id="@+id/status"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="5dp"
+        android:layout_margin="15dp"
         android:text="@string/not_yet_connected"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:gravity="center_horizontal" />
+        android:gravity="center_horizontal"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:layout_below="@id/layout1"/>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="5dp"
-        android:gravity="center" >
+        android:layout_margin="15dp"
+        android:gravity="center"
+        android:layout_below="@id/status">
 
         <Button
             android:id="@+id/gogame"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="GO!" />
+            android:textSize="15sp"
+            android:text="Go!"
+            style="@style/btnStyle" />
     </LinearLayout>
-
-</LinearLayout>
+    <!-- gif view-->
+    <com.notown.btumbrella.GifView
+        android:id="@+id/gif0"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_gravity="center"
+        android:enabled="false"/>
+    <com.notown.btumbrella.GifView
+        android:id="@+id/gif1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:enabled="false"/>
+    <com.notown.btumbrella.GifView
+        android:id="@+id/gif2"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:enabled="false"/>
+    <com.notown.btumbrella.GifView
+        android:id="@+id/gif3"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:enabled="false"/>
+    <com.notown.btumbrella.GifView
+        android:id="@+id/gif4"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_gravity="center"
+        android:enabled="false"/>
+    <com.notown.btumbrella.GifView
+        android:id="@+id/gif5"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_gravity="center"
+        android:enabled="false"/>
+    <com.notown.btumbrella.GifView
+        android:id="@+id/gif6"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center"
+        android:enabled="false"/>
+    <com.notown.btumbrella.GifView
+        android:id="@+id/gif7"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_gravity="center"
+        android:enabled="false"/>
+    <!-- umbrella gif-->
+    <com.notown.btumbrella.GifView
+        android:id="@+id/gifumbrella"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:enabled="false"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="50dp"/>
+</RelativeLayout>
